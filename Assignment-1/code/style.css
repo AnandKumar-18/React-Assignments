@@ -1,1 +1,57 @@
+.container {
+    width: auto;
+    height: auto;
+}
+.row {
+    display: block;
+    width: auto;
+}
+.yellow {
+    display: flex;
+}
+.yellow .content {
+    flex: 1 1 auto;
+    margin: 10px;
+    height: 150px;
+    background-color: orange;
+}
 
+.red {
+    background-color: red;
+    height: 250px;
+    margin: 10px;
+}
+
+.blue {
+    display: flex;
+}
+
+.blue .content {
+    flex:1 1 auto;
+    margin: 10px;
+    background-color: royalblue;
+    height: 175px;
+}
+
+/* ------------------min width 1024px-------------------- */
+@media screen and (min-device-width:1024px){
+    .yellow .content, .blue .content {
+        flex: 1 1 auto;
+    }
+
+}
+/* ------------------min width 768px-------------------- */
+@media screen and (min-device-width:768px) and (max-device-width:1023px){
+    .yellow .content {
+        flex: 1 1 auto;
+    }
+    .blue{
+        flex-direction: column;
+    }
+}
+/* ------------------min width 320px-------------------- */
+@media screen and (min-device-width:320px) and (max-device-width:767px){
+    .yellow, .blue {
+        flex-direction: column;
+    }
+}
