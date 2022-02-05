@@ -36,3 +36,45 @@
     transform: rotate(360deg);
   }
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.image-container img{
+  border-radius: 5px;
+}
+
+.name-container {
+  color: #2cabce;
+  position: relative;
+  right: 20px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 12px 0;
+  position: relative;
+  right: 8px;
+}
+
+.info span {
+  font-size: 10px;
+  color: grey;
+}
+
+.info strong {
+  font-size: 20px;
+}
+.second {
+  margin-left: -30px;
+}
+
+.third {
+  margin-left: -65px;
+}
